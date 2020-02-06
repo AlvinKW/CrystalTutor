@@ -135,7 +135,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'kwanalvin150@gmail.com'
 EMAIL_HOST_PASSWORD = email_pass
 EMAIL_USE_TSL = True
-EMAIL_USE_SSL = False
+
 
 # EMAIL_HOST = 'localhost'
 # EMAIL_PORT = 1025
