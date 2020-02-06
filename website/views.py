@@ -18,7 +18,7 @@ def home(request):
 			'Crystal Tutor Message From: ' + your_name, #subject
 			'Name: ' + your_name + '\nPhone :' + your_phone + '\nAddress: ' + your_address + '\n Email: ' + your_email + '\nTime slot: ' + your_time + '\n\nMessage: ' + your_message, #message
 			your_email, #from email
-			['kwanalvin150@gmail.com'], #to email
+			['alvink88@bu.edu'], #to email
 			fail_silently=False,
 			)
 
