@@ -30,7 +30,7 @@ SECRET_KEY = '3i7lu0maa3xwg$sqb=7stu&l3kq+n$)l)!ss8x9xc2&%3s@aw='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['crystalchaututoring.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'crystalchaututoring.herokuapp.com']
 
 
 # Application definition
