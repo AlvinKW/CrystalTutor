@@ -130,11 +130,22 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-EMAIL_USE_TSL = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'kwanalvin150@gmail.com'
+
+SEND_GRID_API_KEY = os.environ.get('sendgrid_api')
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'alvinkwan'
 EMAIL_HOST_PASSWORD = email_pass
 EMAIL_PORT = 587
+EMAIL_USE_TSL = True
+DEFAULT_FROM_EMAIL = 'alvink88@bu.edu'
+ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Contact email'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# EMAIL_USE_TSL = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'kwanalvin150@gmail.com'
+# EMAIL_HOST_PASSWORD = email_pass
+# EMAIL_PORT = 587
 
 
 

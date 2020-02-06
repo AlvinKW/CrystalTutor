@@ -12,14 +12,6 @@ def home(request):
 		your_address = request.POST['your-address']
 		your_time = request.POST['your-time']
 		your_message = request.POST['your-message']
-
-
-		email_pass = os.environ.get('email_pass')
-		mailServer = smtplib.SMTP('smtp.gmail.com', 587)
-	    mailServer.ehlo()
-	    mailServer.starttls()
-	    mailServer.ehlo()
-	    mailServer.login('kwanalvin150@gmail.com', email_pass)
 		
 		#send email
 		send_mail(
