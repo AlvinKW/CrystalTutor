@@ -141,7 +141,6 @@ STATICFILES_DIRS = [
 # ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Contact email'
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_BACKEND = ‘django.core.mail.backends.smtp.EmailBackend’
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TSL = True
 EMAIL_PORT = 587
