@@ -1,0 +1,86 @@
+@import url(scripts.js);
+
+/* Icons
+   ===================================*/
+.icon-big {
+	font-size: 3.5em;
+	display: block;
+	color: #00aeef;
+	margin-bottom: 10px;
+	margin-right: 25px; 
+	text-align: center;
+}
+
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #00aeef;
+	font-size: 1.2em;
+	margin-right: 10px;
+	/* Align texts and icons trick */
+	line-height: 1.2;
+	vertical-align: middle;
+	margin-top: -4px;
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%; /* Will fill 100% of browser, not of the 1140px, no row class*/
+
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%; /* 4 images per row/ ul element */
+
+}
+
+.meal-photo {
+	width: 100%; /* redundant line, only bottom code needed...try removing after add transitions */
+	overflow: hidden; /* Keeps images contained */
+	background-color: #000; /* for darker img */
+}
+
+.meal-photo img {
+	opacity: 0.7; /* can you use linear gradient instead? try this with header too. */
+	width: 100%;
+	height: auto;
+	-webkit-transform: scale(1.16);
+	        transform: scale(1.16); /* 116% bigger i think... */
+	transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1); /* back to normal*/
+	opacity: 1; /* back to normal*/
+}
+
+.meals { padding: 0; }
+
+
+
+
+/* Animations
+   ===================================*/
+/*.js--wp-1, 
+.js--wp-2, 
+.js--wp-3 {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+	opacity: 1; 
+}
+
+.js--wp-4 {
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+}*/

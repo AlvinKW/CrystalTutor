@@ -1,0 +1,540 @@
+{% load static %}
+<!-- Connect webpage to backend css/js -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Crystal Chau's Tutoring Site">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Crystal Chau's Tutoring</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/ionicons.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/grid.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="tutor-load"></div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Top Content -->
+                    <div class="col-6 col-md-9 col-lg-8">
+                        <div class="top-header-content">
+                            <a href="https://giphy.com/gifs/reactionseditor-3og0IQvQkzyfxgjzLa/fullscreen" data-toggle="tooltip" data-placement="bottom" title="123 Maple Street, Boston, 02111 USA"><i class="fa fa-map-marker"></i> <span>123 Maple Street, Boston, 02111 USA</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="info.crystal@gmail.com"><i class="fa fa-envelope"></i> <span>info.crystal@gmail.com</span></a>
+                        </div>
+                    </div>
+                    <!-- Top Header Social Info -->
+                    <div class="col-6 col-md-3 col-lg-4">
+                        <div class="top-header-social-info text-right">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="tutorNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/crystal_logo.png' %}" alt=""></a>
+                       <!--  {% if your_message %}
+                        <h2> We've received your message  
+                        {{ your_name }}!</h2>
+                        {% endif %} -->
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <!-- add nav bar here -->
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Booking Now Button -->
+                        <a href="#book-session-area" class="btn tutor-btn booking-btn">Schedule Now</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <section class="welcome-area">
+        <!-- Welcome Slides -->
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Welcome Slide -->
+            <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/1.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Welcome Text -->
+                            <div class="welcome-text text-center">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">SESSIONS <strong>PERSONALIZED</strong> FOR YOUR NEEDS.</h2>
+                                <p data-animation="fadeInUp" data-delay="300ms">I offer peer-to-peer tutoring, both online and in person. We focus mainly in Math and English subjects in K—12 level. Our lesson plan includes building new skills, reinforcing the skills learned, and developing creative approach to solving problems while making learning fun and enjoyable!</p>
+                                <div class="welcome-btn-group">
+                                    <a href="#book-session-area" class="btn tutor-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                                    <a href="#book-session-area" class="btn tutor-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Welcome Slide -->
+            <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/2.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Welcome Text -->
+                            <div class="welcome-text text-center">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">K-12 Academic Subject Tutoring</h2>
+                                <p data-animation="fadeInUp" data-delay="300ms">
+                                    My background includes areas that is taught through K-12 including English, Math, Science, Social Science, Chinese (Mandarin), MCAS, study skills, resume writing, and more!
+                                </p>
+                                <div class="welcome-btn-group">
+                                    <a href="#book-session-area" class="btn tutor-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                                    <a href="#book-session-area" class="btn tutor-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Welcome Slide -->
+            <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Welcome Text -->
+                            <div class="welcome-text text-center">
+                                <h2 data-animation="fadeInDown" data-delay="100ms">SAT and ACT Test Prep</h2>
+                                <p data-animation="fadeInDown" data-delay="300ms">I will prepare you and/or your child for SAT and ACT tests. Through customized instructions, students will learn how to make most of their time and increase their scores.</p>
+                                <div class="welcome-btn-group">
+                                    <a href="#book-session-area" class="btn tutor-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
+                                    <a href="#book-session-area" class="btn tutor-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ****** About Us Area Start ******* -->
+    <section class="tutor-about-us-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- About Us Thumbnail -->
+                <div class="col-12 col-md-6">
+                    <div class="about-us-thumbnail mb-50">
+                        <img src="{% static 'website/img/bg-img/propic.png' %}" alt="">
+                    </div>
+                </div>
+                <!-- About Content -->
+                <div class="col-12 col-md-6">
+                    <div class="about-us-content mb-50">
+                        <!-- Section Heading -->
+                        <div class="section-heading">
+                            <h2>About Me</h2>
+                            <div class="line"></div>
+                        </div>
+                        <p>Senior at Newton South H.S. (Class of 2020)</p>
+                        <p>
+                            Crystal Chau is a high achieving student graduating from Newton South High School in June 2020, with aspirations to study Business. She is currently taking challenging coursework such as AP Psychology, Honors Shakespeare, Accelerated Precalculus, Honors Marine Biology, and Advanced College Preparatory Marketing.
+                        </p>
+
+                        <!-- Single Skills Area -->
+                        <div class="single-skills-area mt-30">
+                            <h6>Math</h6>
+                            <div id="bar1" class="barfiller">
+                                <span class="tip"></span>
+                                <span class="fill" data-percentage="95"></span>
+                            </div>
+                        </div>
+
+                        <!-- Single Skills Area -->
+                        <div class="single-skills-area mt-30">
+                            <h6>English</h6>
+                            <div id="bar2" class="barfiller">
+                                <span class="tip"></span>
+                                <span class="fill" data-percentage="100"></span>
+                            </div>
+                        </div>
+
+                        <!-- Single Skills Area -->
+                        <div class="single-skills-area mt-30">
+                            <h6>Skill Building</h6>
+                            <div id="bar3" class="barfiller">
+                                <span class="tip"></span>
+                                <span class="fill" data-percentage="90"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****** About Us Area End ****** -->
+
+    <div class="container">
+        <div class="tutor-border clearfix"></div>
+    </div>
+
+    <!-- Cool Facts Area Start -->
+    <section class="tutor-cta-area">
+        <div class="container">
+            <div class="row">
+                <!-- Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cta text-center mt-50 mb-100">
+                        <i class="icon_genius"></i>
+                        <h2><span class="counter">8</span></h2>
+                        <h5>Years Of Experience Mentoring</h5>
+                    </div>
+                </div>
+
+                <!-- Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cta text-center mt-50 mb-100">
+                        <i class="icon_heart_alt"></i>
+                        <h2><span class="counter">99.99</span>%</h2>
+                        <h5>Satisfaction</h5>
+                    </div>
+                </div>
+
+                <!-- Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cta text-center mt-50 mb-100">
+                        <i class="icon_book_alt"></i>
+                        <h2><span class="counter">13</span>+</h2>
+                        <h5>Years Of Leadership Experience</h5>
+                    </div>
+                </div>
+
+                <!-- Cool Facts Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cta text-center mt-50 mb-100">
+                        <i class="icon_id"></i>
+                        <h2><span class="counter">100</span>+</h2>
+                        <h5>Resumes Written and/or Revised</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cool Facts Area End -->
+
+
+    <!-- Book An Oppointment Area Start -->
+    <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/4.jpg' %}');" id="book-session-area">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center white">
+                        <h2>Schedule A Session!</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Appointment Form -->
+                    <div class="appointment-form">
+                        <form action="{% url 'home' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="text" name="your-name" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="text" name="your-phone" class="form-control" placeholder="Your Phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="email" name="your-email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="text" name="your-address" class="form-control" placeholder="Your Address (Optional)">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <select name="your-time" class="form-control">
+                                            <option value="Choose Your Scheldule">Choose Your Scheldule</option>
+                                            <option value="9 AM to 10 AM">9 AM to 10 AM</option>
+                                            <option value="11 AM to 12 PM">11 AM to 12 PM</option>
+                                            <option value="2 PM to 4 PM">2 PM to 4 PM</option>
+                                            <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-30">
+                                        <textarea name="your-message" class="form-control" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn tutor-btn" onclick="return confirm('Thank You! We will contact you shortly...')">Schedule Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book An Appointment Area End -->
+
+    <!-- ***** Service Area Start ***** -->
+    <section class="service-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Services <br>
+                            <font size="2">Sessions <strong>personalized</strong> for your needs</font>
+                        </h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="tutor-cta-area">
+                <div class="container">
+                    <div class="row">
+                        <!-- Services Area -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="single-cta mt-50 mb-50">
+                                <i class="ion-ios-cog-outline icon-big"></i>
+                                <h2>Skill-Building</h2>
+                                <p class="services-desc">For students wanting to improve their overall understanding of core concepts.
+                                </p>
+
+                                <ul class="services-list">
+                                    <li>(Math skills, writing skills, studying skills, i.e.)</li>
+                                    <li>Individualized curriculum</li>
+                                    <li>Personalized assignments after each session to reinforce learning</li>
+                                    <li>Homework assignments for reinforced practice</li>
+                                </ul>
+                            </div>
+                        </div>
+                      
+                        <!-- Services Area -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="single-cta mt-50 mb-50">
+                                <i class="ion-ios-paper-outline icon-big"></i>
+                                <h2>Homework Help</h2>
+                                <p class="services-desc">For students in grades K&mdash;10</p>
+                                <ul class="services-list">
+                                    <li>Creating a personalized studying program</li>
+                                    <li>Reinforcing concepts demonstrated on homework with additional practice</li>
+                                    <li>Enforcing efficient organization techniques</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="single-cta mt-50 mb-50">
+                                <i class="ion-ios-mic-outline icon-big"></i>
+                                <h2>Interview Skills</h2>
+                                <ul class="services-list">
+                                    <li>Creating a personalized studying program</li>
+                                    <li>Reinforcing concepts demonstrated on homework with additional practice</li>
+                                    <li>Enforcing efficient organization techniques</li>
+                                </ul>
+                            </div>
+                        </div>
+                     
+
+                        <!-- Services Area -->
+                          <div class="col-12 col-sm-6 col-lg-3">
+
+                            <div class="single-cta mt-50 mb-50">
+                                <i class="ion-ios-pie-outline icon-big"></i>
+                                <h2>Concentration</h2>
+                                <p class="services-desc">For specific subject classes</p>
+                                <ul class="services-list">
+                                    <li>Math (algebra, trigonometry, middle school mathematics, ect)</li>
+                                    <li>English (writing, grammar)</li>
+                                    <li>Personal Branding/Resume Building </li>
+                                    <li>Mandarin Chinese</li>
+                                    <li>Cantonese Chinese</li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+            </section>
+        </div>
+        </div>
+    </section>
+    <!-- ***** Service Area End ***** -->
+
+    <!-- ***** Testimonials Area Start ***** -->
+    <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/5.jpg' %}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Testimonials Slides -->
+                    <div class="testimonials-slides owl-carousel">
+                        <!-- Single Testimonials Slide -->
+                        <div class="single-testimonial-slide d-flex align-items-center">
+                            <!-- Thumbnail -->
+                            <div class="testimonial-thumb">
+                                <img src="{% static 'website/img/bg-img/laura_w.jpg' %}" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="testimonial-content">
+                                <h5>“I had the great pleasure to work with Crystal at Science Club For Girls for over a year. Crystal served as Junior Mentor to second and third grade girls, teaching them a new STEM concept each week. This role is multifaceted blending both scientific and leadership skills. In addition to having the ability to convey the scientific concepts to the girls, Crystal is responsible, thoughtful, engaging, and relatable. This was evident in the great relationships she built with the students. She is a valuable role model and mentor and I’d welcome the chance to work with her again!”</h5>
+                                <h6>Laura Warwick</h6>
+                                <p>Clinical Development</p>
+                            </div>
+                        </div>
+
+                        <!-- Single Testimonials Slide -->
+                        <div class="single-testimonial-slide d-flex align-items-center">
+                            <!-- Thumbnail -->
+                            <div class="testimonial-thumb">
+                                <!-- <img src="{% static 'website/img/bg-img/8.jpg' %}" alt=""> -->
+                            </div>
+                            <!-- Content -->
+                            <div class="testimonial-content">
+                                <h5>“As a participant in the Rosie's Place Social Institute, Crystal commited to increasing her understanding of social justice and how these issues affect her community. She went through a competitive selection process and was selected based on her understanding and commitment to making a change in the world. Participants completed an interactive training session where we explored sensitive topics about injustices they have witnesses or experienced. Over the course of the summer, they also attended seminars which featured community leaders fighting for social justice. Putting their thoughts into action, they spent time with the women of Rosie's Place by assisting them in our dining room and food pantry—volunteering about 50 hours over the summer. At the end of the program, SJI students used their personal connections with the poor and homeless women to create an essay on how social injustice affects many of the women's daily lives.Crystal demonstrated a commitment to social justice through her participation in the Rosie's Place Social Justice Institute. We truely appreciated all of Crystal's hard work and look forward to seeing what great things she would do in the future.”</h5>
+                                <h6>Jessica Garretson</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Area End ***** -->
+
+    <!-- ***** Blog Area Start ***** -->
+
+    <section class="tutor-contact-area mt-50 mb-100">
+        <div class="col-12">
+            <div class="section-heading text-center">
+                <h2>Find us at...</h2>
+                <div class="line"></div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="google-maps mb-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11797.227848915722!2d-71.21667216074003!3d42.33597844197696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e382639bf92ee3%3A0xb388077d9d6e49ce!2sNewton%20Free%20Library!5e0!3m2!1sen!2sus!4v1580486832812!5m2!1sen!2sus" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ***** Blog Area End ***** -->
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <!-- Single Footer Widget -->
+                <!-- Social Info -->
+                <div class="footer-social-info">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-content">
+                        <p>
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+
+                            </script> by Alvin Kwan. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS ******* -->
+    <script src="{% static 'website/js/scripts.js' %}"></script>
+    <!-- jQuery js -->
+    <script src="{% static 'website/js/jquery.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'website/js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <!-- All js -->
+    <script src="{% static 'website/js/tutor.bundle.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
