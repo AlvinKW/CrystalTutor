@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3i7lu0maa3xwg$sqb=7stu&l3kq+n$)l)!ss8x9xc2&%3s@aw='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -156,6 +156,6 @@ EMAIL_USE_TSL = True
 # EMAIL_HOST_PASSWORD = ''
 # EMAIL_USE_TSL = False
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
