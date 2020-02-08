@@ -1,7 +1,7 @@
 {% load static %}
 <!-- Connect webpage to backend css/js -->
 
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -17,10 +17,11 @@
     <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'website/css/ionicons.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'website/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/styles.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/ionicons.min.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/grid.css' %}" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/normalize.css' %}" media="all">
 
 </head>
 
@@ -48,11 +49,7 @@
                     <!-- Top Header Social Info -->
                     <div class="col-6 col-md-3 col-lg-4">
                         <div class="top-header-social-info text-right">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
                         </div>
                     </div>
                 </div>
@@ -182,9 +179,9 @@
                             <h2>About Me</h2>
                             <div class="line"></div>
                         </div>
-                        <p>Senior at Newton South H.S. (Class of 2020)</p>
+                        <p>Senior at Newton South High School (Class of 2020)</p>
                         <p>
-                            Crystal Chau is a high achieving student graduating from Newton South High School in June 2020, with aspirations to study Business. She is currently taking challenging coursework such as AP Psychology, Honors Shakespeare, Accelerated Precalculus, Honors Marine Biology, and Advanced College Preparatory Marketing.
+                            Crystal Chau is a high achieving student graduating from Newton South High School in June 2020, with aspirations to study Business Management. She is currently taking challenging coursework such as AP Psychology, Honors Shakespeare, Accelerated Precalculus, Honors Marine Biology, Advanced College Preparatory Marketing, and Advanced College Preparatory Entrepreneurship. Currently she works at her school as a teaching assistent at the college and career center.
                         </p>
 
                         <!-- Single Skills Area -->
@@ -192,7 +189,7 @@
                             <h6>Math</h6>
                             <div id="bar1" class="barfiller">
                                 <span class="tip"></span>
-                                <span class="fill" data-percentage="95"></span>
+                                <span class="fill" data-percentage="100"></span>
                             </div>
                         </div>
 
@@ -210,7 +207,7 @@
                             <h6>Skill Building</h6>
                             <div id="bar3" class="barfiller">
                                 <span class="tip"></span>
-                                <span class="fill" data-percentage="90"></span>
+                                <span class="fill" data-percentage="100"></span>
                             </div>
                         </div>
                     </div>
@@ -259,8 +256,8 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-cta text-center mt-50 mb-100">
                         <i class="icon_id"></i>
-                        <h2><span class="counter">100</span>+</h2>
-                        <h5>Resumes Written and/or Revised</h5>
+                        <h2><span class="counter">20</span>+</h2>
+                        <h5>Students Taught</h5>
                     </div>
                 </div>
             </div>
@@ -307,17 +304,6 @@
                                 <div class="col-md-6">
                                     <div class="form-group mb-30">
                                         <input type="text" name="your-address" class="form-control" placeholder="Your Address (Optional)">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group mb-30">
-                                        <select name="your-time" class="form-control">
-                                            <option value="Choose Your Scheldule">Choose Your Scheldule</option>
-                                            <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                                            <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                                            <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                                            <option value="8 PM to 10 PM">8 PM to 10 PM</option>
-                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -456,6 +442,19 @@
                                 <h6>Jessica Garretson</h6>
                             </div>
                         </div>
+                        <!-- Single Testimonials Slide -->
+                        <div class="single-testimonial-slide d-flex align-items-center">
+                            <!-- Thumbnail -->
+                            <div class="testimonial-thumb">
+                                <!-- <img src="{% static 'website/img/bg-img/8.jpg' %}" alt=""> -->
+                            </div>
+                            <!-- Content -->
+                            <div class="testimonial-content">
+                                <h5>“I supervised Crystal when she volunteered as a junior mentor for Science Club for Girls. Crystal grew up with the organization as a participant in the K-8 grade clubs. Once Crystal started high school, she applied and was accepted to be a junior mentor, teaching and mentoring younger girls while working alongside adult mentors in STEM. Crystal brought her passion for science, positive energy and infectious joy to every club session. I was impressed with how much Crystal grew in maturity, responsibility, and her desire to get feedback to improve her mentoring skills. Crystal easily connected with our participants and helped create a truly supportive and empowering experience for girls and young women in STEM.”</h5>
+                                <h6>Christine Niccoli</h6>
+                                <p>Program Manager</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -492,13 +491,6 @@
             <div class="row">
                 <!-- Single Footer Widget -->
                 <!-- Social Info -->
-                <div class="footer-social-info">
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-                </div>
             </div>
         </div>
         </div>
